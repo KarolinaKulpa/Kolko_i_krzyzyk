@@ -1,0 +1,22 @@
+@startuml
+  class WindowWithButtons {
+	+ __init__(**kwargs) : None
+	+ main_structure()
+	+ button_clicked()
+	__
+	+ buttons : List[QPushButton]
+	+ board : Board
+	+ turn : Turn
+	+ press_sound : mixer.Sound
+}
+QWidget <|-- WindowWithButtons 
+class QWidget {
+	+ __init__()
+	+ show()
++ setGeometry()
+	+ setWindowTitle()
+	+ setWindowIcon()
+}
+
+
+@enduml

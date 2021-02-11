@@ -1,0 +1,11 @@
+@startuml
+  class Turn {
+	+ __init__() : None
+	+ give_turn() : str
+	+ change_turn(int position, string value)
+	__
+	+ turn : str
+}
+
+
+@enduml

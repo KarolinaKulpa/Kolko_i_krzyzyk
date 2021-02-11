@@ -1,0 +1,11 @@
+@startuml
+  class Board {
+	+ __init__() : None
+	+ give_board() : List[str]
+	+ change_board(int position, string value)
+	__
+	+ board : List[str]
+}
+
+
+@enduml
